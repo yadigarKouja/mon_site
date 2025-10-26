@@ -1,0 +1,161 @@
+
+@page {
+    margin: 2cm;
+}
+
+/* --- Base --- */
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: black;
+    background: white;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: none;
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24pt;
+    color: black;
+    text-align: center;
+}
+
+
+nav {
+    display: none;
+}
+
+
+main {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+/*  Titres  */
+h2 {
+    font-size: 18pt;
+    color: black;
+    margin-top: 20pt;
+    margin-bottom: 10pt;
+    border-bottom: 1px solid black;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-size: 14pt;
+    color: black;
+    margin-top: 15pt;
+    margin-bottom: 8pt;
+    page-break-after: avoid;
+}
+
+h4 {
+    font-size: 12pt;
+    color: black;
+    margin-top: 10pt;
+    margin-bottom: 5pt;
+    page-break-after: avoid;
+}
+
+/*  pparagraphes  */
+p {
+    text-align: justify;
+    margin-bottom: 10pt;
+    orphans: 3;
+    widows: 3;
+}
+
+/* images  */
+img {
+    max-width: 100%;
+    height: auto;
+    page-break-inside: avoid;
+    margin: 10pt 0;
+}
+
+/*  Articles  */
+article {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 10pt;
+    margin: 15pt 0;
+    page-break-inside: avoid;
+}
+
+/*  Listes  */
+ul, ol {
+    margin-left: 20pt;
+    margin-bottom: 10pt;
+}
+
+li {
+    margin-bottom: 5pt;
+}
+
+/*  Liens  */
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    font-style: italic;
+}
+
+a[href^="#"]:after,
+a[href^="index"]:after,
+a[href^="erbil"]:after,
+a[href^="amedi"]:after,
+a[href^="rawanduz"]:after {
+    content: "";
+}
+
+
+dt {
+    font-weight: bold;
+    margin-top: 8pt;
+}
+
+dd {
+    margin-left: 15pt;
+    margin-bottom: 5pt;
+}
+
+/*  Pied de page  */
+footer {
+    background: none;
+    color: black;
+    border-top: 2px solid black;
+    padding-top: 10pt;
+    margin-top: 20pt;
+    page-break-before: avoid;
+}
+
+footer h3 {
+    font-size: 14pt;
+}
+
+
+h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+}
+
+article, img, table {
+    page-break-inside: avoid;
+}
+
+.no-print {
+    display: none;
+}
